@@ -2,11 +2,13 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 format:
-	black *.py
+	black *.py mylib/*.py
 lint:
-	pylint --disable=R,C main.py
+	pylint --disable=R,C *.py mylib/*.py
 test:
-	python -m pytest -vv --cov=hello test_main.py
+	python -m pytest -vv --cov=mylib test_logic.py
+build:
+	# build a container
 deploy:
 	# deploy
 all:
