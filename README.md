@@ -72,5 +72,10 @@
 
 *   **ECS (Elastic Container Service)**: Although not directly used, App Runner is built on top of ECS, providing a simplified way to deploy containerized applications.
 *   **CodeBuild**: Used to build the Docker image of the microservice and push it to ECR.
+   ![Screenshot 2025-01-04 174345](https://github.com/user-attachments/assets/dfcbf0d3-a389-46d1-a3de-630dea49e610)
 *   **App Runner**: Used to deploy and run the containerized microservice.
+   =![Screenshot 2025-01-04 175636](https://github.com/user-attachments/assets/02ede86f-2033-4d9a-beaf-bb207e4e2856)
+
 *   **ECR (Elastic Container Registry)**: Used to store the Docker images of the microservice.
+   ![Screenshot 2025-01-04 175555](https://github.com/user-attachments/assets/944b98c7-18cf-473e-bdeb-bae999ba7f71)
+
