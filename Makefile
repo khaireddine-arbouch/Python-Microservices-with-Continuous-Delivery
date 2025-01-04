@@ -1,11 +1,12 @@
 install:
-	# later
+	pip install --upgrade pip &&\
+		pip install -r requirements.txt
 format:
-	# format the code
+	black *.py
 lint:
-	# Check the syntax
+	pylint --disable=R,C main.py
 test:
-	# test your code
+	python -m pytest -vv --cov=hello test_main.py
 deploy:
 	# deploy
 all:
