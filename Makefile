@@ -18,5 +18,4 @@ deploy:
 	docker build -t fastapi-1232 .
 	docker tag fastapi-1232:latest 135808939327.dkr.ecr.us-east-1.amazonaws.com/fastapi-1232:latest
 	docker push 135808939327.dkr.ecr.us-east-1.amazonaws.com/fastapi-1232:latest
-all:
-	install post-install lint test deploy
+all: install post-install lint test deploy
